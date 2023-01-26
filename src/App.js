@@ -6,7 +6,7 @@ import UserProfile from './components/UserProfile'
 import { useSelector } from "react-redux";
 
 function App() {
-  const isAuth= useSelector(state=>state.auth.isAuthenticated)
+  const isAuth= useSelector(state=>state.auth.isAuthenticated||false)
   return (
     <Fragment>
       <Header />
